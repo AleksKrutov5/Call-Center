@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Телефонный справочник</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="app.js"></script>
+</head>
+<body id="body">
+<script src="app.js"></script>
+<script type="text/javascript">
+</script>
+<div class="head">Телефонный справочник</div>
+<form class="list">
+	<ul class="lis">
+		<li>Введите фамилию:
+			<input required type="text" id="lastName" maxlength="10"></input>
+		</li>
+		<li>
+			Введите имя:
+			<input type="text" id="firstName" maxlength="10"></input>
+		</li>
+		<li>
+			Выберите дату рождения:
+			<input type="date" id="birthday"></input>
+		</li>
+		<li>
+			Введите номер телефона:
+			<input type="phone" id="number" maxlength="12"></input>
+		</li>
+		<li>
+			Введите пол человека:
+				<select name="sex" size="1" id="ыex">
+  				<option value="Мужчина">Мужчина</option>
+  				<option value="Женщина">Женщина</option>
+  				<option value="Неопределившийся">Средний пол</option>
+				</select>
+		</li>
+	</ul>
+	<button class="deleteall" onclick="deleteAllContact()"> !Стереть все контакты! </button>
+	<button class="save" onclick="saveContact()"> Сохранить </button>
+	<button class="delete" onclick="clearAll()"> Стереть </button>
+	<div class="search">
+<input type="number" id="search" onchange="searchContact()"> Поиск по номеру телефона: </input>
+	</div>
+</form>
+		<button class="vyvod" onclick="tableCreate()"> Вывести все сохраненные абонеты</button>
+<div class="result">  Список всех Ваших контактов:</div>
+<table id="tableAllContact" style="border: 1px solid black;margin: 3rem;"></table>
+<table id="tableSearchContact" style="border: 1px solid black;margin: 3rem;"> </table>
+<ul id="pagination"></ul>
+<button type=button id="sf"  onclick = "textToFile2()">!Сохранить все контакты в файл формата JSON!</button>
+<br>
+<input type ="file" id="upload" onchange="showFile(this)"> Выберите файл для загрузки контактов </input>
+
+
+</body>
+
+</html>

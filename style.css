@@ -1,0 +1,134 @@
+.head{
+	width: 405px;
+	height: 50px;
+	margin: 0 auto;
+	border: inset;
+	font-size: 24pt;
+	background-color: LightSkyBlue;
+	font-family:  Bradley Hand, cursive;
+	opacity: 0.8;
+}
+
+.list{
+	font-family:  Bradley Hand, cursive;
+	background-color: LightSkyBlue;
+	width: 800px;
+	height: 250px;
+	border: inset;
+	font-size: 15px;
+ 	margin: 0 auto;
+ 	opacity: 0.8;
+}
+.lis{
+	list-style-type: none;
+	font-size: 18px;
+}
+input {
+  display: inline-block;
+  float: right;
+  margin-top: 1px;
+  width: 300px;
+}
+.delete{
+	float: right;
+	margin-top: 5px;
+	margin-right: 60px;
+}
+.deleteall{
+	float: right;
+	margin-top: 5px;
+	margin-left: 50px;
+}
+.save {
+	float: left;
+	margin-top: 5px;
+	margin-left: 100px;
+}
+.vyvod{
+	width: 806px;
+	height: 40px;
+	font-family:  Bradley Hand, cursive;
+	font-size: 20px;
+	background-color: white;
+	margin: 0 auto;
+	display: block;
+	border: inset;
+}
+.result{
+	font-family:  Bradley Hand, cursive;
+	background-color: LightSkyBlue;
+	width: 800px;
+	height: 50px;
+	border: inset;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 auto;
+	opacity: 0.8;
+}
+table{
+border-collapse: collapse;
+border-spacing: 12px;
+weight:  30px;
+height: 20px;
+}
+th, td{
+padding: 10px 20px;
+border: 1px solid #000;
+}
+.search{
+	margin-top: 80px;
+	font-size: 20px;
+	font-style: italic;
+	margin-left:  30px;
+}
+tbody tr:nth-child(odd) {
+  background-color: red;
+}
+
+tbody tr:nth-child(even) {
+  background-color: green;
+}
+
+table {
+  background-color: white;
+}
+select{
+  display: inline-block;
+  float: right;
+  margin-top: 2px;
+  width: 308px;	
+}
+#birthday{
+	width:  303px;
+}
+.deleteContact{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.icon_remove{
+weight:  30px;
+height: 30px;
+}
+#upload{
+	float: left;
+}
+#pagination {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+}
+#pagination li {
+	margin-right: 5px;
+	padding: 10px;
+	border: 1px solid black;
+}
+#pagination li:hover, #pagination li.active {
+	cursor: pointer;
+	color: red;
+	border: 1px solid red;
+}
+body{
+background: url(img/fonBody.jpg); /*  Путь к фоновому изображению */
+background-size: 100%;
+}
