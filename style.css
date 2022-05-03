@@ -13,7 +13,7 @@
 	font-family:  Bradley Hand, cursive;
 	background-color: LightSkyBlue;
 	width: 800px;
-	height: 250px;
+	height: 280px;
 	border: inset;
 	font-size: 15px;
  	margin: 0 auto;
@@ -44,6 +44,12 @@ input {
 	margin-top: 5px;
 	margin-left: 100px;
 }
+#saveAllContact{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
 .vyvod{
 	width: 806px;
 	height: 40px;
@@ -65,32 +71,34 @@ input {
 	margin: 0 auto;
 	opacity: 0.8;
 }
-table{
-border-collapse: collapse;
-border-spacing: 12px;
-weight:  30px;
-height: 20px;
-}
+
 th, td{
-padding: 10px 20px;
+padding: 10px 31px;
 border: 1px solid #000;
 }
-.search{
-	margin-top: 80px;
-	font-size: 20px;
+#search{
+	font-size: 15px;
 	font-style: italic;
-	margin-left:  30px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 5px;
 }
-tbody tr:nth-child(odd) {
-  background-color: red;
+#uploadContact{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	
 }
-
-tbody tr:nth-child(even) {
-  background-color: green;
-}
-
 table {
-  background-color: white;
+  font-family:  Bradley Hand, cursive;
+	background-color: LightSkyBlue;
+	opacity: 0.8;
+}
+#tableAllContact{
+	margin: auto;
+}
+#tableSearchContact{
+	margin: auto;
 }
 select{
   display: inline-block;
@@ -122,6 +130,7 @@ height: 30px;
 	margin-right: 5px;
 	padding: 10px;
 	border: 1px solid black;
+	background-color: white;
 }
 #pagination li:hover, #pagination li.active {
 	cursor: pointer;

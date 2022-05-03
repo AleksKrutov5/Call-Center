@@ -35,24 +35,19 @@
   				<option value="Неопределившийся">Средний пол</option>
 				</select>
 		</li>
-	</ul>
-	<button class="deleteall" onclick="deleteAllContact()"> !Стереть все контакты! </button>
+		</ul>
+	<button class="deleteall" onclick="deleteAllContact()"> !Удалить все контакты! </button>
 	<button class="save" onclick="saveContact()"> Сохранить </button>
 	<button class="delete" onclick="clearAll()"> Стереть </button>
-	<div class="search">
-<input type="number" id="search" onchange="searchContact()"> Поиск по номеру телефона: </input>
-	</div>
+	<button type=button id="saveAllContact"  onclick = "textToFile2()">!Сохранить все контакты в файл формата JSON!</button>
+	<input type="text" id="search" onchange="searchContact()" value="Поиск по номеру телефона"> </input>
+	<input type ="file" id="uploadContact" onchange="showFile(this)"></input>
 </form>
-		<button class="vyvod" onclick="tableCreate()"> Вывести все сохраненные абонеты</button>
+	<button class="vyvod" onclick="tableCreate()"> Вывести все сохраненные абонеты</button>
 <div class="result">  Список всех Ваших контактов:</div>
-<table id="tableAllContact" style="border: 1px solid black;margin: 3rem;"></table>
-<table id="tableSearchContact" style="border: 1px solid black;margin: 3rem;"> </table>
+<table id="tableAllContact" style="border: 1px solid black;margin = auto"></table>
+<table id="tableSearchContact" style="border: 1px solid black; margin = auto"> </table>
 <ul id="pagination"></ul>
-<button type=button id="sf"  onclick = "textToFile2()">!Сохранить все контакты в файл формата JSON!</button>
-<br>
-<input type ="file" id="upload" onchange="showFile(this)"> Выберите файл для загрузки контактов </input>
-
-
 </body>
 
 </html>

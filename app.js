@@ -105,6 +105,7 @@ function tableCreate(){
 //////////////// Функция поиска контактов по номеру телефона  и их редактированию ///////////////
 
 function searchContact(){
+	let 
 	var bym = document.getElementById('search').value;
 	console.log(bym);
 	var ser = persons.filter(el => el.Number === bym);					// Осуществляем поиск по номеру телефона
