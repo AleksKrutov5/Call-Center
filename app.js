@@ -15,10 +15,10 @@ function saveContact(){ 													//Функция по сохранению 
 		sex : sext,
 		id : persons.length + 1};                                       	// Требуется редактирование, генерирование id должно производиться по другому!!!!!!!!!!!!!!
 	persons.push(person); 													// Созданный объект Person добавляем в массив Persons
-	del(); 																	// После сохранения данных сразу ощищаем поля input	
-																			// Вызываем сразу функцию по выводу введенных данных в таблицу														
-
-	window.localStorage.setItem('persons' , JSON.stringify(persons));
+																			// После сохранения данных сразу ощищаем поля input																		// Вызываем сразу функцию по выводу введенных данных в таблицу														
+	console.log(person);
+	window.localStorage.setItem('persons', JSON.stringify(persons));
+	clearAll(); 
 }
 
 
@@ -104,8 +104,7 @@ function tableCreate(){
 
 //////////////// Функция поиска контактов по номеру телефона  и их редактированию ///////////////
 
-function searchContact(){
-	let 
+function searchContact(){ 
 	var bym = document.getElementById('search').value;
 	console.log(bym);
 	var ser = persons.filter(el => el.Number === bym);					// Осуществляем поиск по номеру телефона
